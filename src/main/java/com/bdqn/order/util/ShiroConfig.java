@@ -5,6 +5,7 @@ import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.annotation.Order;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -60,6 +61,7 @@ public class ShiroConfig {
         filterMap.put("/order/login","anon");
         filterMap.put("/order/register","anon");
         filterMap.put("/order/toLogin","anon");
+        filterMap.put("/order/img","anon");
         filterMap.put("/order/product/list","anon");//product下面所有的路径都要过滤
         filterMap.put("/order/product/addOrder/**","authc");
         filterMap.put("/order/product/allOrder","authc");

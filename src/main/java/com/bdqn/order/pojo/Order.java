@@ -18,7 +18,6 @@ public class Order {
     @DateTimeFormat(pattern = "yyyy-mm-dd")
     private Date orderTime;
 
-
     @DateTimeFormat(pattern = "yyyy-mm-dd")
     private Date overTime;
 

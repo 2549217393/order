@@ -12,6 +12,16 @@ public class User implements Serializable {
 
     private BigDecimal userBalance;
 
+    private String userCode;
+
+    public String getUserCode() {
+        return userCode;
+    }
+
+    public void setUserCode(String userCode) {
+        this.userCode = userCode;
+    }
+
     public Integer getUserId() {
         return userId;
     }
